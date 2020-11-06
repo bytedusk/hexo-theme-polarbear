@@ -10,9 +10,9 @@
 .post {
   padding: $post-padding;
 
-  & + .post {
-    border-top: $post-border;
-  }
+  // & + .post {
+  //   border-top: $post-border;
+  // }
 
   .post-excerpt {
       img {
@@ -20,6 +20,18 @@
       }
   }
 
+  @import '_post/header';
+  @import '_post/content';
+  @import '_post/footer';
+}
+
+.index-post {
+  padding: $index-post-padding;
+
+  color: #aaa;
+  // & + .post {
+  //   border-top: $post-border;
+  // }
   @import '_post/header';
   @import '_post/content';
   @import '_post/footer';

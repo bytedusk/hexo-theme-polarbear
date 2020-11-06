@@ -1,5 +1,5 @@
 {% extends "_layout.swig" %}
-{% import '_macro/post.swig' as post_template %}
+{% import '_macro/index-post.swig' as post_template %}
 
 
 {% block title %} {{ config.title }} - {{ config.description }}{% endblock %}

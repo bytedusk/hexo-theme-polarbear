@@ -14,7 +14,7 @@
     {% endif %}
 
     {% for post in page.posts %}
-      {% if page.archive %}
+      <!-- {% if page.archive %}
         {% set year %}
         {% set post.year = date(post.date, 'YYYY') %}
 
@@ -24,15 +24,17 @@
             <h4 class="archive-year">{{ year }}</h4>
           </div>
         {% endif %}
-      {% endif %}
+      {% endif %} -->
 
       <div class="archive-post">
+
         <span class="archive-post-time">
-          {% if page.archive %}
+          <!--{% if page.archive %}
             {{ date(post.date, 'MM-DD') }}
           {% else %}
             {{ date(post.date, 'YYYY-MM-DD') }}
-          {% endif %}
+          {% endif %} -->
+          {{ date(post.date, 'YYYY-MM-DD') }}
         </span>
         <span class="archive-post-title">
           <a href="{{ url_for(post.path) }}" class="archive-post-link">
